@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-18T08:57:47.624Z",
+    "end": "2022-02-18T08:57:56.443Z",
+    "duration": 8819,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "80bd1b2c-1976-4b90-833d-6401c8c27984",
+      "title": "",
+      "fullFile": "cypress/integration/banners.spec.js",
+      "file": "cypress/integration/banners.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8f8d2aa8-c482-4f60-a827-616646cf2119",
+          "title": "Banners Category Test Cases",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "e1bfcd10-7ce2-41af-806b-7ca90c8be285",
+              "title": "\"Banner visibilty\"",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Verify if the banner visibility changes when clicking on the \"Visibility\" icon",
+                  "fullTitle": "Banners Category Test Cases \"Banner visibilty\" Verify if the banner visibility changes when clicking on the \"Visibility\" icon",
+                  "timedOut": null,
+                  "duration": 8719,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('.cdk-drag-disabled > app-banner-item > .banner-item').find('svg[data-icon=\"eye\"]:eq(0)').click().then(icon => {\n  cy.wrap(icon).should('not.exist');\n});\ncy.get('.cdk-drag-disabled > app-banner-item > .banner-item').find('svg[data-icon=\"eye-invisible\"]:eq(0)').should('exist').and('be.visible');",
+                  "err": {},
+                  "uuid": "f4ba7b7c-ac98-43ec-915b-4ca0e299490e",
+                  "parentUUID": "e1bfcd10-7ce2-41af-806b-7ca90c8be285",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "f4ba7b7c-ac98-43ec-915b-4ca0e299490e"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 8719,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

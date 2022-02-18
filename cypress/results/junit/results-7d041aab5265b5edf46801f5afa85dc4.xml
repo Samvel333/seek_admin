@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="12.6730" tests="4" failures="1">
+  <testsuite name="Root Suite" timestamp="2022-02-13T15:26:47" tests="0" file="cypress/integration/banners.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Banners Category Test Cases" timestamp="2022-02-13T15:26:47" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="&quot;Add new&quot; button" timestamp="2022-02-13T15:26:47" tests="4" time="12.5670" failures="1">
+    <testcase name="Banners Category Test Cases &quot;Add new&quot; button &quot;before each&quot; hook for &quot;Verify if clicking on the &quot;Add new&quot; button a new banner rectangle appears&quot;" time="0.0000" classname="&quot;before each&quot; hook for &quot;Verify if clicking on the &quot;Add new&quot; button a new banner rectangle appears&quot;">
+      <failure message="Timed out retrying after 4000ms: Expected to find content: &apos; + Add New &apos; but never did.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `&quot;Add new&quot; button`" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find content: ' + Add New ' but never did.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `"Add new" button`
+    at Context.eval (https://stagingadmin.seekunique.co/__cypress/tests?p=cypress\integration\banners.spec.js:111:10)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,13 +1,13 @@
 // /// <reference types="cypress" />
 
 // import 'cypress-wait-until';
-// import { isKeepInput, isTrimInput } from '../utils/1.Global'
+// import { isKeepInput, isTrimInput, login } from '../utils/utils'
 
 // describe('Meta-Data Test cases', () => {
-    
+//     login('admin_infinity@gmail.com', 'asdfgA!123')
 //     beforeEach(() => {
-//         cy.signIn()
- 
+       
+//         cy.visit('https://stagingadmin.seekunique.co/dashboard/web-pages/banners');
 //         cy.get('.sider-menu').children().eq(4).click()
 //         cy.get('ul.ng-star-inserted').children().eq(14).as('meta-data')
 //         cy.get('@meta-data').click()
@@ -34,12 +34,14 @@
 
 //     //1
 //     it('Verify if the system keeps the input of the "Description" field of the "Website" section', () => {
+        
 //         cy.get('textarea').first().as('website_description')
 //        isKeepInput('@website_description')
 //     });
 
 //     //2
 //     it('Verify if the system trims spaces of the "Description" field of the "Website" section', () => {
+
 //         cy.get('textarea').first().as('website_description')
 //         isTrimInput('@website_description')
 //     });
